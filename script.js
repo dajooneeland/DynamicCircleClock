@@ -34,7 +34,7 @@ function copyEmbedCode() {
     const secondColor = document.getElementById('secondColor').value.replace('#', '');
     const textColor = document.getElementById('textColor').value.replace('#', '');
 
-    const githubPageUrl = `https://username.github.io/DynamicCircleClock/embed.html?hour=${hourColor}&minute=${minuteColor}&second=${secondColor}&text=${textColor}`;
+    const githubPageUrl = `https://dajooneeland.github.io/DynamicCircleClock/embed.html?hour=${hourColor}&minute=${minuteColor}&second=${secondColor}&text=${textColor}`;
     const embedCode = `<iframe src="${githubPageUrl}" width="300" height="300" frameborder="0"></iframe>`;
     
     const textarea = document.getElementById('embedCode');
