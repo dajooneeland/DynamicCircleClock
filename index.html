@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Circle Clock</title>
+    <link rel="stylesheet" href="./styles-index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="clock-container">
+        <svg class="clock" width="300" height="300">
+            <circle class="circle hour-circle" cx="150" cy="150" r="140"></circle>
+            <circle class="circle minute-circle" cx="150" cy="150" r="130"></circle>
+            <circle class="circle second-circle" cx="150" cy="150" r="120"></circle>
+        </svg>
+        <div class="time-text" id="time">00:00:00</div>
+    </div>
+    <div class="controls">
+        <label>시 색상: <input type="color" id="hourColor" value="#4a90e2"></label>
+        <label>분 색상: <input type="color" id="minuteColor" value="#50c878"></label>
+        <label>초 색상: <input type="color" id="secondColor" value="#ff6f61"></label>
+        <label>시간 텍스트 색상: <input type="color" id="textColor" value="#333333"></label>
+        <textarea id="embedCode" readonly>Embed 코드가 여기에 표시됩니다.</textarea>
+        <button onclick="copyEmbedCode()">Embed 코드 복사</button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
