@@ -5,16 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clock Embed</title>
     <link rel="stylesheet" href="./styles-embed.css">
-    <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="clock-container">
         <svg class="clock" width="300" height="300">
+            <circle class="guide-circle hour-guide" cx="150" cy="150" r="140"></circle>
+            <circle class="guide-circle minute-guide" cx="150" cy="150" r="130"></circle>
+            <circle class="guide-circle second-guide" cx="150" cy="150" r="120"></circle>
             <circle class="circle hour-circle" cx="150" cy="150" r="140"></circle>
             <circle class="circle minute-circle" cx="150" cy="150" r="130"></circle>
             <circle class="circle second-circle" cx="150" cy="150" r="120"></circle>
         </svg>
-        <div class="time-text" id="time">00:00:00</div>
+        <div class="time-container">
+            <div class="date-text" id="date">03 . 26</div>
+            <div class="time-wrapper">
+                <span class="ampm-text" id="ampm">AM</span>
+                <div class="time-text" id="time">12:00:00</div>
+            </div>
+        </div>
     </div>
     <script src="./script.js"></script>
 </body>
