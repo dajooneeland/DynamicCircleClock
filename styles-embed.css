@@ -5,7 +5,7 @@ body {
     height: 100vh;
     margin: 0;
     background: transparent; /* 노션에서 자연스럽게 */
-    font-family: 'Gaegu', sans-serif;
+    font-family: 'Cherry Bomb One', sans-serif;
 }
 
 .clock-container {
@@ -28,26 +28,59 @@ body {
     transition: stroke-dasharray 0.2s ease;
 }
 
-.hour-circle {
+.guide-circle {
+    fill: none;
+    stroke-width: 2;
+    stroke-opacity: 0.3;
+    transform-origin: center;
+}
+
+.hour-circle, .hour-guide {
     transform: rotate(-90deg);
 }
 
-.minute-circle {
+.minute-circle, .minute-guide {
     transform: rotate(0deg);
     direction: rtl;
 }
 
-.second-circle {
+.second-circle, .second-guide {
     transform: rotate(90deg);
 }
 
-.time-text {
+.time-container {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.time-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ampm-text {
+    font-size: 24px;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.time-text {
     font-size: 36px;
     font-weight: 700;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.date-text {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
     z-index: 10;
 }
