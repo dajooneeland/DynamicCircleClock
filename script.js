@@ -13,10 +13,10 @@ function updateClock() {
     document.getElementById('time').textContent = `${hours}:${minutes}:${seconds}`;
     document.getElementById('ampm').textContent = ampm;
 
-    // 기본 반지름 (고정 크기 기준)
-    const hourRadius = 140;
-    const minuteRadius = 130;
-    const secondRadius = 120;
+    // 기본 반지름 (280px 기준으로 조정)
+    const hourRadius = 130; // 140 * (280/300)
+    const minuteRadius = 120; // 130 * (280/300)
+    const secondRadius = 110; // 120 * (280/300)
 
     // strokeDasharray 계산
     const hourCircumference = 2 * Math.PI * hourRadius;
