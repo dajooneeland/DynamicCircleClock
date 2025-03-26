@@ -10,8 +10,8 @@ body {
 
 .clock-container {
     position: relative;
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,20 +66,20 @@ body {
 }
 
 .ampm-text {
-    font-size: 24px;
+    font-size: 22px; /* 24px에서 비례적으로 조정 */
     font-weight: 700;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .time-text {
-    font-size: 36px;
+    font-size: 34px; /* 36px에서 비례적으로 조정 */
     font-weight: 700;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
     z-index: 10;
 }
 
 .date-text {
-    font-size: 24px;
+    font-size: 22px; /* 24px에서 비례적으로 조정 */
     font-weight: 700;
     color: #333;
     z-index: 10;
